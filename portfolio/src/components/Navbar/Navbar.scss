@@ -1,0 +1,43 @@
+/* src/components/Navbar.scss */
+@import "../../styles/variables.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 1.3rem;
+}
+
+.logo a {
+  color: $primary-color;  
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+.chachi{
+  display: none;
+}
+@media (max-width: 768px) {
+  .chachi{
+    display: block;
+  }
+}
