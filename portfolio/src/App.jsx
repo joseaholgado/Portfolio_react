@@ -6,8 +6,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Bienvenido a mi pagina web</h1>
+      {/*Aqui hay que tener en cuenta que el componnente navbar es fijo y hay que meter martgin top al sigiente componente */}
     </div>
+    
   );
 }
 
