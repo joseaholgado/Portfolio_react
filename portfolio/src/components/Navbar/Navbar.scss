@@ -7,74 +7,70 @@
   align-items: center;
   background-color: #333;
   padding: 1.3rem;
-  position: fixed; /* Needed for positioning the menu-bg */
+  position: fixed; 
   width: 100%;
-}
+  &__logo{
 
-.logo a {
-  color: $primary-color;  
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex; 
-  & li {
-    margin: 0 1rem;
-  }
-  & a {
-    color: $primary-color;
+   a {
+    color: $primary-color;  
+    font-size: 1.5rem;
     text-decoration: none;
-    font-size: 1.1rem;
-    &:hover{
-      color: #f0a500;
-    }
   }
 }
-
-@media (max-width: 768px) {
-  
-  .navbar {
-    justify-content: space-between;  
-  }
-  
-  .nav-links {
+  &__nav-links {
     list-style: none;
-    display: flex;
-    flex-direction: column; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translate(-100%, -100%); 
-    transition: transform 3s ease;
-    opacity: 0; 
-    &.active{
-      transform: translate(0, 0); 
-      opacity: 1; 
-      top:100px;
+    display: flex; 
+     li {
+      margin: 0 1rem;
     }
-    &:not(active){
-      transform: translate(-100%, -100%);
-      opacity: 1; 
-      top:100px;
-    }
-    & li {
-      margin: 1rem;
-      text-align: center; 
-    }
-    & a {
+     a {
       color: $primary-color;
       text-decoration: none;
-      font-size: 1.4rem;  
+      font-size: 1.1rem;
       &:hover{
         color: #f0a500;
       }
     }
+  }
 }
-  .menu-bg {  
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    justify-content: space-between;  
+    &__nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column; 
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translate(-100%, -100%); 
+      transition: transform 2s ease;
+      opacity: 1; 
+      &--active{
+        transform: translate(0, 0); 
+        opacity: 1; 
+        top:100px;
+      }
+      & li {
+        margin: 1rem;
+        text-align: center; 
+      }
+      & a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 1.4rem;  
+        &:hover{
+          color: #f0a500;
+        }
+      }
+  }
+  &__menu-bg {  
     transform: translate(-100%, -100%); 
     position: fixed;
     top: 0;
@@ -83,13 +79,15 @@
     height: 100%; 
     border-radius: 0 0 80% 0;
     background: rgba(0, 0, 0, 0.5); 
-    &.active{
+    transition: transform 2s ease;
+    &--active{
       transform: translate(0, 0);
-      transition: transform 3s ease;
+      
     }
-    &:not(active){
-      transform: translate(-100%, -100%);
-      transition: transform 3s ease;
-    }
+    
   }
+  }
+  
+  
+  
 }
