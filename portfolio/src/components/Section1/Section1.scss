@@ -5,14 +5,13 @@
     display: flex;
   
     &__text {
-        display: flex;
+        flex: 1 1 50%;
         flex-direction: column;
-      h2 {
-        color: red;
-      }
+        justify-content: center;
+        
     }
   
     &__image {
-      
+        flex: 1 1 50%;
     }
   }

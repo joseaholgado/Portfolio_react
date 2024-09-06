@@ -1,0 +1,21 @@
+@import '../../../styles/main.scss';
+
+.mechanicalKeyboard{
+    h2{
+        color:$primary-color;
+    }
+    &__text{
+        color: $secondary-color;
+        font-family: 'Poopins-Thin', sans-serif;
+        font-size: x-large;
+    }
+}
+@media   (max-width: 768px){
+    .mechanicalKeyboard{
+        
+        h2{
+            color:blue
+    }
+    
+}
+}
