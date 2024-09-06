@@ -1,5 +1,5 @@
 /* src/components/Navbar.scss */
-@import "../../styles/variables.scss";
+@import "../../styles/main.scss";
 
 .navbar {
   display: flex;
@@ -12,9 +12,11 @@
   &__logo{
 
    a {
+   
     color: $primary-color;  
     font-size: 1.5rem;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
   }
 }
   &__nav-links {
@@ -27,6 +29,7 @@
       color: $primary-color;
       text-decoration: none;
       font-size: 1.1rem;
+      font-family: 'Poppins', sans-serif; 
       &:hover{
         color: #f0a500;
       }

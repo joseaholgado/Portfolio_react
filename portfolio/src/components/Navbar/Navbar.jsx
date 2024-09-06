@@ -2,6 +2,7 @@ import React, { useState }  from 'react'
 import './Navbar.scss'
 import BurguerButton from './BurguerButton/BurguerButton'
 
+
 const Navbar = () => {
   const[isOpen, setIsOpen]= useState(false)
 
