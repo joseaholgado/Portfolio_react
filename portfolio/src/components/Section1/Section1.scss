@@ -8,6 +8,11 @@
         flex: 1 1 50%;
         flex-direction: column;
         justify-content: center;
+        &-button{
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
         
     }
   
@@ -15,3 +20,17 @@
         flex: 1 1 50%;
     }
   }
+  ButtonEffect{
+    &:nth-child(2) {
+        background: transparent;
+        color: #00abf0;
+
+        &:hover {
+            color: #081b29;
+        }
+
+        &::before {
+            background: #00abf0;
+        }
+    }
+}

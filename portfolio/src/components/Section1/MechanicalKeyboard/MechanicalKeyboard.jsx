@@ -47,9 +47,9 @@ const MechanicalKeyboard = () => {
 
   return (
     <div className="mechanicalKeyboard">
-      <h3>Hola, me llamo</h3>
+      <h2>Hola, me llamo</h2>
       <h1>Jose Antonio</h1>
-      <h3>y soy <span className='mechanicalKeyboard__text'>{text}</span></h3>
+      <h2>y soy <span className='mechanicalKeyboard__text'>{text}</span></h2>
       <p>
         Entusiasta del mundo de la programación con una sólida base de conocimientos y una gran motivación,
         a pesar de mi limitada experiencia profesional en el sector, ya que soy recién graduado. Durante mi

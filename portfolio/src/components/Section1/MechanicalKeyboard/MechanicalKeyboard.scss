@@ -1,9 +1,12 @@
 @import '../../../styles/main.scss';
 
 .mechanicalKeyboard{
-    h2{
-        color:$primary-color;
+    color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+    h1{
+        font-size: 3rem;
     }
+   
     &__text{
         color: $secondary-color;
         font-family: 'Poopins-Thin', sans-serif;
@@ -13,9 +16,7 @@
 @media   (max-width: 768px){
     .mechanicalKeyboard{
         
-        h2{
-            color:blue
-    }
+        
     
 }
 }

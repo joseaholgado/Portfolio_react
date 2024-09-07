@@ -1,4 +1,5 @@
-import './App.scss';
+import React from 'react'
+import './App.scss'
 import Navbar from './components/Navbar/Navbar'
 import Section1 from './components/Section1/Section1'
 import './styles/main.scss'
