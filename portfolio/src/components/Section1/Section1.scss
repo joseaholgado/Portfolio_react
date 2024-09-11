@@ -17,20 +17,13 @@
     }
   
     &__image {
+        display: flex;
+        justify-content: center;
         flex: 1 1 50%;
     }
-  }
-  ButtonEffect{
-    &:nth-child(2) {
-        background: transparent;
-        color: #00abf0;
 
-        &:hover {
-            color: #081b29;
-        }
-
-        &::before {
-            background: #00abf0;
-        }
+    @media (max-width: 768px) {
+        flex-direction: column;
     }
-}
+  }
+ 

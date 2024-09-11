@@ -2,6 +2,7 @@ import React from 'react'
 import './Section1.scss'
 import  MechanicalKeyboard from './MechanicalKeyboard/MechanicalKeyboard.jsx'
 import ButtonEffect from './ButtonEffect/ButtonEffect.jsx'
+import MoveImage from './RotatingImage/moveImage.jsx'
 
 const Section1 =() => {
     return (
@@ -14,7 +15,7 @@ const Section1 =() => {
                 </div>
             </div>
             <div className="section1__image">
-                <h2>image</h2>
+                <MoveImage/>
             </div>
         </div>
     )
