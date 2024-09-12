@@ -2,8 +2,8 @@ import React from 'react'
 import './Section1.scss'
 import  MechanicalKeyboard from './MechanicalKeyboard/MechanicalKeyboard.jsx'
 import ButtonEffect from './ButtonEffect/ButtonEffect.jsx'
-import MoveImage from './RotatingImage/moveImage.jsx'
-
+import MoveImage from './RotatingImage/MoveImage.jsx'
+import SocialIcons from './ButtonSocial/SocialIcons.jsx'
 const Section1 =() => {
     return (
         <div className="section1" id="section1">
@@ -13,6 +13,7 @@ const Section1 =() => {
                 <ButtonEffect/>
                 <ButtonEffect variant="variant2"/>
                 </div>
+                <SocialIcons/>
             </div>
             <div className="section1__image">
                 <MoveImage/>

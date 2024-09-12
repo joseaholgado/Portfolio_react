@@ -8,9 +8,13 @@
     }
    
     &__text{
-        color: $secondary-color;
-        font-family: 'Poopins-Thin', sans-serif;
-        font-size: x-large;
+        background: $linear-color;
+        -webkit-background-clip: text; /* Necesario para WebKit (Chrome, Safari) */
+        -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
+        background-clip: text; /* Necesario para otros navegadores */
+        text-fill-color: transparent; /* Hace que el texto sea transparente */
+        font-family: 'Poppins-Thin', sans-serif;
+        font-size: xx-large;
     }
 }
 @media   (max-width: 768px){
