@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
         <div className="navbar__logo">
-          <a href="/">Jose A</a>
+          <a href="#">Jose A</a>
         </div>
 
        {/* Here we create a div for the found menu, that show with the clase 'menu-bg' */}

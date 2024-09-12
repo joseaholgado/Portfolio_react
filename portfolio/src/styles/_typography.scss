@@ -1,10 +1,18 @@
+//This is for nabvar logo
 @font-face{
-    font-family: 'Poppins';
+    font-family: 'Poppins-Navbar';
     src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 600;
+    font-style: normal;
+    text-wrap: nowrap;
+}
+//This is for navbar links a
+@font-face{
+    font-family: 'Poppins-Navbar-li';
+    src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
-
 @font-face{
     font-family: 'Poppins-Thin';
     src: url('../assets/fonts/Poppins-Thin.ttf') format('truetype');
