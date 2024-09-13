@@ -3,27 +3,49 @@
 
 .section1 {
     display: flex;
-  
+   margin-top: 10%;
+   margin-right: 5%;
     &__text {
         flex: 1 1 50%;
         flex-direction: column;
         justify-content: center;
-        &-button{
+        
+        
+        &-button {
+            margin-top:5%;
+            margin-bottom:25%;
             display: flex;
             justify-content: space-evenly;
-           
         }
-        
     }
-  
+
     &__image {
         display: flex;
         justify-content: center;
         flex: 1 1 50%;
     }
+    @media (max-width: 1000px) {
+        
+        &__text {            
+            &-button {
+                
+                margin-top:10%;
+            }
+        }
+        
+    }
 
     @media (max-width: 768px) {
         flex-direction: column;
+        margin-right:0%;
+        &__text {
+            margin-top:5%;
+            margin-left: 10%;
+            margin-right:10%;
+            &-button {
+                margin-bottom:10%;
+            }
+        }
+        
     }
-  }
- 
+}

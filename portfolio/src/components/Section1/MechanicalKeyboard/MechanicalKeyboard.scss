@@ -6,6 +6,9 @@
     h1{
         font-size: 3rem;
     }
+    p{
+        margin-top: 1%;
+    }
    
     &__text{
         background: $linear-color;
@@ -13,7 +16,7 @@
         -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
         background-clip: text; /* Necesario para otros navegadores */
         text-fill-color: transparent; /* Hace que el texto sea transparente */
-        font-family: 'Poppins-Thin', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: xx-large;
     }
 }

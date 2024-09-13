@@ -7,6 +7,9 @@ import SocialIcons from './ButtonSocial/SocialIcons.jsx'
 const Section1 =() => {
     return (
         <div className="section1" id="section1">
+            <div className="section1__image">
+                <MoveImage/>
+            </div>
             <div className="section1__text">
                 <MechanicalKeyboard/>
                 <div className="section1__text-button">
@@ -15,9 +18,7 @@ const Section1 =() => {
                 </div>
                 <SocialIcons/>
             </div>
-            <div className="section1__image">
-                <MoveImage/>
-            </div>
+            
         </div>
     )
 }

@@ -2,7 +2,7 @@
 
 .socialIcons {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     ul {
       display: flex;  
       li {
@@ -70,5 +70,11 @@
         background-color: #dd4b39; // Google
       }
     }
+    @media (max-width: 768px) {
+      justify-content: center;
+      
+      
+    }
+
   }
   
