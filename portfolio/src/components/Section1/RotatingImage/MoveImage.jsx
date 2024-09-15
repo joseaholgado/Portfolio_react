@@ -5,13 +5,14 @@ import photo from '../../../assets/images/Jose_antonio.jpg'
 const MoveImage = () => {
     return (
         <div className="moveImage">
-            {/* Imagen central */}
-            <img
-                src={photo}
-                alt="PhotoCentral"
-                className="moveImage__central"
-            />
-            
+            <div className="moveImage__fancy">
+                <img
+                    src={photo}
+                    alt="PhotoCentral"
+                    className="moveImage__central"
+                />
+                
+            </div>
         </div>
     )
 }

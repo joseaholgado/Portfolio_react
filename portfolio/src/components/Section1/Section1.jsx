@@ -13,8 +13,8 @@ const Section1 =() => {
             <div className="section1__text">
                 <MechanicalKeyboard/>
                 <div className="section1__text-button">
-                <ButtonEffect/>
-                <ButtonEffect variant="variant2"/>
+                <ButtonEffect text="Descargar CV"/>
+                <ButtonEffect text="Contactar" variant="variant2"/>
                 </div>
                 <SocialIcons/>
             </div>
