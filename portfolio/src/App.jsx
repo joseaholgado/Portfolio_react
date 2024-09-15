@@ -3,13 +3,14 @@ import './App.scss'
 import Navbar from './components/Navbar/Navbar'
 import Section1 from './components/Section1/Section1'
 import './styles/main.scss'
+import Section2 from './components/Section2/Section2'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/*Aqui hay que tener en cuenta que el componnente navbar es fijo y hay que meter martgin top al sigiente componente */}
       <Section1/>
+      <Section2/>
     </div>
   );
 }

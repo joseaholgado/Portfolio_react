@@ -1,6 +1,6 @@
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import React from 'react'
 import './SocialIcons.scss'  
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const SocialIcons = () => {
   return (
