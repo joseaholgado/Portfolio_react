@@ -1,0 +1,12 @@
+@import "../../styles/main.scss";
+
+.section2 {
+    width: 90%;
+    &__experience {
+        
+    }
+
+ @media (max-width: 768px) {
+    width: 80%;
+ }
+}

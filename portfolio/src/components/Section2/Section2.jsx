@@ -9,7 +9,9 @@ const Section2 = () => {
                 <h1 className="section2__title-text">Habilidades</h1>
             </div>
             <div className="section2__experience">
-                <Carrousel/>
+                <Carrousel direction="right"/>
+                <Carrousel direction="left"/>
+                
             </div>
             <div className="section2__images">
                 
