@@ -3,7 +3,9 @@
 .section2 {
     width: 90%;
     &__experience {
-        
+        display:flex;
+         justify-content: space-around;
+         margin-bottom:30px;
     }
 
  @media (max-width: 768px) {

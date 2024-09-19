@@ -45,4 +45,4 @@ Carrousel.propTypes = {
   direction: PropTypes.string.isRequired
 }
 
-export default Carrousel;
+export default Carrousel
