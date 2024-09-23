@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import "./CardExperience.scss"
 import {dataExperience} from "./DataExperience" 
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const CardExperience = () => {
     const [index, setIndex] = useState(0)
@@ -52,11 +52,23 @@ const CardExperience = () => {
             <button onClick={handleMoreClick}>
                  {showMore ? "Hide" : "Show"} details
             </button>
-            {showMore && <p>{card.text}</p>}
+
+             {showMore && (
+                <div className="cardExperience__list">
+                    <p>{card.text}</p>
+                    <ul>
+                        {card.technologies.map((tech) => (
+                            <li key={tech.name}>
+                                <FontAwesomeIcon icon={tech.icon} /> {tech.name}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </div>
     )
 }
 
 
 
-export default CardExperience
+export default CardExperience 
