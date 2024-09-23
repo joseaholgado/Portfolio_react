@@ -1,14 +1,26 @@
 @import "../../styles/main.scss";
 
 .section2 {
-    width: 90%;
-    &__experience {
-        display:flex;
-         justify-content: space-around;
-         margin-bottom:30px;
-    }
+   width: 90%;
 
- @media (max-width: 768px) {
-    width: 80%;
- }
+   &__experience {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 30px;
+   }
+
+   @media (max-width: 768px) {
+      width: 80%;
+
+      &__experience {
+
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+   }
 }

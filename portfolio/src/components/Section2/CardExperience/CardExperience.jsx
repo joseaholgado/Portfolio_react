@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+ import React, {useState} from "react"
 import "./CardExperience.scss"
 import {dataExperience} from "./DataExperience" 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -42,6 +42,7 @@ const CardExperience = () => {
               </button>
               <img src={card.image}></img>
               <button 
+                  className="cardExperience-chance"
                   onClick={handleNextClick}
                   disabled={!hasNext}
               >

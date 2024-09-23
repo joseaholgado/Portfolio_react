@@ -12,10 +12,53 @@
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba($secondary-color, 0.1);
   transition: all 0.3s;
-  
+
   &:hover {
     transform: translateY(-0.5rem);
-    box-shadow: 0 0 20px rgba($secondary-color, 0.2);
+    box-shadow: 0 0 20px rgba($secondary-color, 0.4);
+  }
+
+  button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    background-image: linear-gradient(transparent, transparent), $linear-color;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #081b29;
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
   }
 
   &-buttons {
@@ -35,23 +78,40 @@
 
       width: 2.5rem;
       height: 2.5rem;
-      opacity: 0.3;
+      opacity: 0.7;
       border-radius: 40%;
+
     }
+
   }
+
   &__list {
-    
+
     ul {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0.2rem;
       width: 100%;
-  
+
       li {
         margin-top: 10px;
         list-style: none;
       }
     }
+
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &-buttons img {
+    height: 234px;
+  }
+
+  &__list {
+    margin-top: 30px;
+
 
   }
 
