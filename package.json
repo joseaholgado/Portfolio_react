@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.5.4",
-    "lottie-react": "^2.4.0",
-    "sass": "^1.77.8"
-  }
-}

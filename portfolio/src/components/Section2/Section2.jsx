@@ -3,7 +3,7 @@ import "./Section2.scss"
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import Carrousel from "./Carrousel/Carrousel.jsx"
 import CardExperience from "./CardExperience/CardExperience.jsx"
-import MyLottieAnimation from "./Animacion/Animacion.jsx"
+import MyLottieAnimationCode from "./AnimationCode/AnimationCode.jsx"
 
 const Section2 = () => {
     return (
@@ -14,7 +14,7 @@ const Section2 = () => {
             <div className="section2__experience">
                 
             <CardExperience/> 
-            <MyLottieAnimation/>
+            <MyLottieAnimationCode/>
             {/*} <Carrousel direction="left"/>*/}
                 
             </div>
