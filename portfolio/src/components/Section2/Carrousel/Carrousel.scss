@@ -43,15 +43,17 @@
     }
 
     &--right &__item {
-        width: $w;
+        width: 80px;
         height: $h;
         position: absolute;
         right: 100%; /* Cambia left a right para que comience en el lado derecho */
         animation: autoRunRight 20s linear infinite;
+        
     }
 
     &:hover .carrousel__item {
         animation-play-state: paused !important;
+        
     }
 
     // Responsividad

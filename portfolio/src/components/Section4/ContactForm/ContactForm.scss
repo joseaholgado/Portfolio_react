@@ -1,0 +1,50 @@
+@import "../../../styles/main.scss";
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: $primary-color;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $secondary-color;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    font-size: 16px;
+    background: $primary-color;
+    color: $secondary-color;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background: $linear-color;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
