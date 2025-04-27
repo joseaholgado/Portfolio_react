@@ -40,7 +40,7 @@ const CardExperience = () => {
               >
                 <i className="fas fa-arrow-left"></i>
               </button>
-              <img src={card.image}></img>
+              <img src={card.image} alt={`${card.title} screenshot`} />
               <button 
                   className="cardExperience-chance"
                   onClick={handleNextClick}
