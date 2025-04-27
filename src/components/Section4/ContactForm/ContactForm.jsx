@@ -8,7 +8,7 @@ const ContactForm = () => {
       method="POST"
       className="form-container"  
     >
-      <input type="hidden" name="_next" value="https://tu-pagina.github.io/gracias.html" />
+      
       <input type="hidden" name="_captcha" value="false" />
 
       <div>

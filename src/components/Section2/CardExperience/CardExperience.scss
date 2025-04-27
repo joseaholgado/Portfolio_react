@@ -6,16 +6,20 @@
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  height: 100%;
-  padding: 1rem;
+  height: auto;
+  min-height: 100%;
+  padding: 1.5rem;
   background-color: $primary-color;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba($secondary-color, 0.1);
-  transition: all 0.3s;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba($secondary-color, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+  perspective: 1000px;
+  overflow: hidden;
 
   &:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 0 20px rgba($secondary-color, 0.4);
+    transform: translateY(-0.75rem) rotateX(2deg);
+    box-shadow: 0 15px 30px rgba($secondary-color, 0.3);
   }
 
   button {
@@ -61,52 +65,208 @@
     }
   }
 
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $secondary-color;
+  }
+
   &-buttons {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+    position: relative;
 
     img {
-      width: 100%;
-      height: 372px;
+      width: 85%;
+      height: auto;
+      max-height: 300px;
       object-fit: contain;
-      margin: 10px 10px 10px 10px;
-    }
+      border-radius: 0.75rem;
+      transition: transform 0.4s ease, filter 0.3s ease;
+      filter: brightness(1);
 
-    button {
-
-      width: 2.5rem;
-      height: 2.5rem;
-      opacity: 0.7;
-      border-radius: 40%;
-
-    }
-
-  }
-
-  &__list {
-
-    ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.2rem;
-      width: 100%;
-
-      li {
-        margin-top: 10px;
-        list-style: none;
+      &:hover {
+        transform: scale(1.02);
+        filter: brightness(1.1);
       }
     }
 
+    button {
+      min-width: 3rem;
+      width: 3rem;
+      height: 3rem;
+      opacity: 0.8;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      &:disabled {
+        opacity: 0.3;
+        transform: scale(0.95);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+  &__list {
+    width: 100%;
+    padding: 0 1rem;
+    
+    p {
+      opacity: 0;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      width: 100%;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        background: rgba($secondary-color, 0.05);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        list-style: none;
+        opacity: 0;
+        animation: slideIn 0.3s ease forwards;
+
+        @for $i from 1 through 20 {
+          &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.1}s;
+          }
+        }
+
+        &:hover {
+          transform: translateX(5px);
+          background: rgba($secondary-color, 0.1);
+        }
+
+        svg {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 75%;
   }
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    &-buttons {
+      gap: 0.25rem;
+      padding: 0 0.25rem;
+
+      img {
+        width: 80%;
+        max-height: 220px;
+      }
+
+      button {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+    }
+
+    &__list {
+      ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.75rem;
+      }
+    }
   }
 
-  &-buttons img {
-    height: 234px;
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    &-buttons {
+      img {
+        width: 75%;
+        max-height: 180px;
+      }
+
+      button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    &__list {
+      padding: 0 0.5rem;
+      
+      ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      li {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      width: 140px;
+    }
   }
 
   &__list {

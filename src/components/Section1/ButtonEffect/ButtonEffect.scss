@@ -44,6 +44,8 @@
     }
 
     &__button--variant2 {
+        padding: 0px;
+        height: 57px;
         background: transparent;
         color: $primary-color;
         border: 2px solid transparent;
@@ -57,6 +59,7 @@
 
         &::before {
             background-image: linear-gradient(transparent, transparent), $linear-color;
+            
         }
     }
 }

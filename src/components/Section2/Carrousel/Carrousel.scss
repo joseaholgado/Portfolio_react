@@ -3,7 +3,7 @@
 // Genera los estilos para cada item usando un bucle
 @for $i from 1 through $quantity {
     .carrousel__item:nth-child(#{$i}) {
-        animation-delay: calc((20s / #{$quantity}) * (#{$i} - 1)) !important;
+        animation-delay: calc((30s / #{$quantity}) * (#{$i} - 1)) !important;
     }
 }
 
@@ -30,7 +30,7 @@
         height: $h;
         position: absolute;
         left: 100%;
-        animation: autoRunLeft 20s linear infinite;
+        animation: autoRunLeft 30s linear infinite;
     }
 
     // Carrusel derecho
@@ -47,12 +47,7 @@
         height: $h;
         position: absolute;
         right: 100%; /* Cambia left a right para que comience en el lado derecho */
-        animation: autoRunRight 20s linear infinite;
-        
-    }
-
-    &:hover .carrousel__item {
-        animation-play-state: paused !important;
+        animation: autoRunRight 30s linear infinite;
         
     }
 
