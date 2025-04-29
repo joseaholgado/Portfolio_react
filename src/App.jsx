@@ -8,7 +8,7 @@ import Section4 from './components/Section4/Section4'
 import Loading from './components/Loading/Loading'
 import { AnimatePresence, motion } from 'framer-motion'
 
-
+//Prueba build
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
