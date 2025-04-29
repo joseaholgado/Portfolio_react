@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import './Navbar.scss'
 import BurguerButton from './BurguerButton/BurguerButton'
+import { motion } from 'framer-motion'
 
 
 const Navbar = () => {
@@ -10,7 +11,17 @@ const Navbar = () => {
       setIsOpen(!isOpen)
   }
     return (
-        <nav className="navbar">
+        <motion.nav 
+          className="navbar"
+          initial={{ y: -100 }}
+          animate={{ y: 0 }}
+          transition={{ 
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+            duration: 0.8 
+          }}
+        >
         <div className="navbar__logo">
           <a href="#">Jose A</a>
         </div>
@@ -27,7 +38,7 @@ const Navbar = () => {
         <BurguerButton toggleMenu={toggleMenu} isOpen={isOpen}/>
         
         
-      </nav>
+      </motion.nav>
     )
     
 }

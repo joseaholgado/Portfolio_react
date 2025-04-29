@@ -1,16 +1,22 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 
-  &:nth-child(1) {
-    display: flex;
-    align-items: center;
+  main {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    > div {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
   }
-
 }
 
 * {
@@ -20,9 +26,34 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background: #ffffff;
   color: #000000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+// Clases para mantener el espacio durante las animaciones
+.preserve-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.section-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  padding-left: 10rem;
+
 }
 
 .section1 {

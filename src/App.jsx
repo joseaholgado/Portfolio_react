@@ -6,6 +6,7 @@ import './styles/main.scss'
 import Section2 from './components/Section2/Section2'
 import Section4 from './components/Section4/Section4'
 import Loading from './components/Loading/Loading'
+import { AnimatePresence, motion } from 'framer-motion'
 
 
 function App() {
@@ -26,17 +27,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {isLoading ? (
-        <Loading onLoadingComplete={handleLoadingComplete} />
-      ) : (
-        <>
-          <Navbar />
-          <Section1/>
-          <Section2/>
-          <Section4/>
-        </>
-      )}
+    <div className="App" style={{ overflowX: 'hidden' }}>
+      <AnimatePresence mode="wait">
+        {isLoading ? (
+          <Loading onLoadingComplete={handleLoadingComplete} key="loading" />
+        ) : (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Navbar />
+            <main style={{ position: 'relative' }}>
+              <Section1/>
+              <Section2/>
+              <Section4/>
+            </main>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
