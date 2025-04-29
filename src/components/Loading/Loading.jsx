@@ -75,13 +75,13 @@ const Loading = ({ onLoadingComplete }) => {
       .add({
         targets: letters,
         scale: [1, 1.2],
-        rotate: () => anime.random(-15, 15),
-        translateX: () => anime.random(-20, 20),
-        translateY: () => anime.random(-20, 20),
+        rotate: () => anime.random(-35, 35),
+        translateX: () => anime.random(-30, 30),
+        translateY: () => anime.random(-30, 30),
         opacity: [1, 0],
-        duration: 1200,
+        duration: 4800,
         delay: anime.stagger(20),
-        easing: 'easeInExpo',
+        easing: 'easeInOutExpo',
         complete: () => {
           // Transición final a negro
           anime({
@@ -91,7 +91,7 @@ const Loading = ({ onLoadingComplete }) => {
             easing: 'easeInOutQuad',
             complete: () => {
               setIsComplete(true);
-              setTimeout(onLoadingComplete, 700);
+              setTimeout(onLoadingComplete, 1000);
             }
           });
         }
