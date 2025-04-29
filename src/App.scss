@@ -2,10 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   text-align: center;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   main {
     position: relative;
@@ -51,10 +59,7 @@ html, body {
   height: 100%;
 }
 
-.navbar {
-  padding-left: 10rem;
 
-}
 
 .section1 {
   padding-top: 80px;

@@ -3,13 +3,19 @@
 
 .section1 {
     display: flex;
-   margin-top: 10%;
-   margin-right: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 5%;
+    gap: 2rem;
+   
+    
     &__text {
         flex: 1 1 50%;
-        flex-direction: column;
+        display: flex;
         justify-content: center;
-        
+        margin-top:15%;
         
         &-button {
             margin-top:5%;
@@ -23,6 +29,13 @@
         display: flex;
         justify-content: center;
         flex: 1 1 50%;
+        
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
     }
     @media (max-width: 1000px) {
         
@@ -37,15 +50,38 @@
 
     @media (max-width: 768px) {
         flex-direction: column;
-        margin-right:0%;
-        &__text {
-            margin-top:5%;
-            margin-left: 10%;
-            margin-right:10%;
-            &-button {
-                margin-bottom:10%;
+        margin-right: 0;
+        
+        &__image {
+            margin-top: 15%;
+            transform: scale(0.85);
+            transform-origin: center;
+            margin-bottom: -10%;
+
+            .content-wrapper {
+                transform: scale(0.75);
+                transform-origin: center;
             }
         }
-        
+
+        &__text {
+            margin-top: 0;
+            margin-left: 10%;
+            margin-right: 10%;
+            transform: scale(0.95);
+            transform-origin: center;
+            margin-bottom: -10%;
+            
+            .content-wrapper {
+                transform: scale(0.95);
+                transform-origin: center;
+            }
+            
+            &-button {
+                margin-bottom: 5%;
+                
+            }
+            
+        }
     }
 }
