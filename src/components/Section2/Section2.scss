@@ -5,21 +5,32 @@
 
    &__experience {
       margin-top: 50px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content-wrapper {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-around;
+         gap: 10%;
+         width: 100%;
+         max-width: 1400px;
+         padding: 0 2rem;
+      }
    }
 
    @media (max-width: 768px) {
       width: 80%;
 
       &__experience {
-
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
+         .content-wrapper {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+         }
       }
 
    }

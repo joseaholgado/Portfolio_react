@@ -23,16 +23,15 @@ const Navbar = () => {
           }}
         >
         <div className="navbar__logo">
-          <a href="#">Jose A</a>
+          <a href="#section1">Jose A</a>
         </div>
 
        <div className={`navbar__menu-bg ${isOpen ? "navbar__menu-bg--active" : ""}`}></div>
 
         <ul className={`navbar__nav-links ${isOpen ? "navbar__nav-links--active" : ""}`}>
-          <li className="navbar__nav-item"><a href="/">Inicio</a></li>
-          <li className="navbar__nav-item"><a href="/about">Habilidades</a></li>
-          <li className="navbar__nav-item"><a href="/services">Servicios</a></li>
-          <li className="navbar__nav-item"><a href="/contact">Contacto</a></li>
+          <li className="navbar__nav-item"><a href="#section1" onClick={() => setIsOpen(false)}>Inicio</a></li>
+          <li className="navbar__nav-item"><a href="#section2" onClick={() => setIsOpen(false)}>Habilidades</a></li>
+          <li className="navbar__nav-item"><a href="#section4" onClick={() => setIsOpen(false)}>Contacto</a></li>
         </ul>
        
         <BurguerButton toggleMenu={toggleMenu} isOpen={isOpen}/>
