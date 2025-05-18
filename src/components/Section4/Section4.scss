@@ -1,77 +1,101 @@
-@import "../../styles/main.scss";
+@import "../../styles/variables";
 
-.section4 {
-    background-color: #f5f5f5;
-    padding: 50px 0;
+.experience-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+
+  h2 {
     text-align: center;
-    display: inline;
-    width: 90%;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: $linear-color;
+    }
+  }
 
-    &__content {
-        margin-bottom: 2rem;
+  .vertical-timeline-element {
+    margin: 2rem 0;
 
-        .content-wrapper {
-            text-align: center;
-        }
+    &-content {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
     }
 
-    &__title {
-        font-size: 2.5rem;
-        color: $secondary-color;
-        margin-bottom: 1rem;
+    &-title {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 0.5rem;
     }
 
-    &__description {
-        font-size: 1.1rem;
-        color: rgba($secondary-color, 0.8);
-        max-width: 600px;
-        margin: 0 auto;
+    &-subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 1rem;
     }
 
-    &__box {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 3rem;
-        margin-bottom: 20px;
-        
-        .content-wrapper {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            gap: 10%;
-            width: 100%;
-            max-width: 1400px;
-            padding: 0 2rem;
-        }
-
-        &-contact {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        &-animation {
-            flex: 1;
-            max-width: 500px;
-        }
+    .timeline-description {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
-    @media (max-width: 768px) {
-        width: 100%;
+    .timeline-technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
 
-        &__box {
-            .content-wrapper {
-                flex-direction: column-reverse;
-                gap: 2rem;
-                padding: 0 1rem;
-            }
+      .tech-tag {
+        background: #f0f0f0;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        color: #555;
+        transition: transform 0.2s ease;
 
-            &-contact,
-            &-animation {
-                width: 100%;
-                max-width: 100%;
-            }
+        &:hover {
+          transform: scale(1.05);
         }
+      }
     }
+
+    &-date {
+      color: #333;
+      font-weight: 600;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .vertical-timeline-element {
+      &-content {
+        padding: 1.5rem;
+      }
+
+      &-title {
+        font-size: 1.2rem;
+      }
+
+      &-subtitle {
+        font-size: 1rem;
+      }
+    }
+  }
 }

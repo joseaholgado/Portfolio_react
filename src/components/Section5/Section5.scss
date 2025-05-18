@@ -1,0 +1,81 @@
+@import "../../styles/main.scss";
+
+.section5 {
+    width: 90%;
+
+    &__content {
+        margin-bottom: 2rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            color: $secondary-color;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: rgba($secondary-color, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__box {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10%;
+            width: 100%;
+            max-width: 1400px;
+            padding: 0 2rem;
+        }
+
+        &-animation {
+            flex: 1;
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20%;
+        }
+
+        &-contact {
+            flex: 1;
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+
+        &__box {
+            .content-wrapper {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            &-animation {
+                width: 100%;
+                max-width: 350px;
+                margin-right: 0;
+            }
+
+            &-contact {
+                width: 100%;
+                max-width: 350px;
+                padding: 0 15px;
+            }
+        }
+    }
+}

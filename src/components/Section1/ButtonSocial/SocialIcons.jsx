@@ -12,12 +12,12 @@ const SocialIcons = () => {
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://github.com/joseaholgado">
           <i className="fab fa-github icon"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-holgado-bonet-033243199/">
           <i className="fab fa-linkedin-in icon"></i>
         </a>
       </li>

@@ -1,6 +1,7 @@
 @import "../../../styles/main.scss";
 
 .cardExperience {
+  margin-bottom:10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,11 +28,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 165px;
-    height: 100%;
+    width: clamp(140px, 30vw, 165px);
+    height: 55px;
     border: 2px solid transparent;
     border-radius: 8px;
-    font-size: 19px;
+    font-size: clamp(14px, 3vw, 19px);
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
@@ -42,6 +43,7 @@
     background-image: linear-gradient(transparent, transparent), $linear-color;
     background-origin: border-box;
     background-clip: content-box, border-box;
+    padding: 0.5rem 1rem;
 
 
     &:hover {
@@ -231,6 +233,7 @@
   }
 
   @media (max-width: 480px) {
+    
     padding: 0.75rem;
 
     h2 {
@@ -244,6 +247,7 @@
       }
 
       button {
+        min-width: 0rem;
         width: 2rem;
         height: 2rem;
         font-size: 0.8rem;
@@ -263,9 +267,12 @@
       }
     }
 
-    button {
-      font-size: 16px;
-      width: 140px;
+    button.show-details {
+      
+      font-size: clamp(14px, 3vw, 16px);
+      width: clamp(120px, 25vw, 140px);
+      height: 40px;
+      padding: 0.5rem;
     }
   }
 

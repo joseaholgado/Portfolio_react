@@ -9,7 +9,7 @@ const MyLottieAnimationEmail = () => {
         autoplay
         loop
         src={animationData} 
-        style={{ height: "300px", width: "300px" }}
+        style={{ height: "clamp(300px, 50vw, 500px)", width: "clamp(300px, 50vw, 500px)" }}
       />
     </div>
   )

@@ -6,11 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: clamp(280px, 80vw, 400px);
+    height: clamp(280px, 80vw, 400px);
     background: $linear-color;
     border-radius: 50%; 
-    border: 10px solid transparent; 
+    border: clamp(6px, 2vw, 10px) solid transparent; 
     animation: fancyBorderAnimation 4s infinite ease-in-out;
 
     &:hover {
@@ -27,11 +27,15 @@
     width: 100%;
     height: auto;
     display: block;
-    max-width: 350px;
+    max-width: clamp(240px, 70vw, 350px);
     aspect-ratio: 1 / 1;
     border-radius: 50%; 
     object-fit: cover;
     object-position: 0% 30%;
+
+    @media (max-width: 768px) {
+      object-position: 0% 20%;
+    }
   }
 }
 

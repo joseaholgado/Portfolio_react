@@ -29,22 +29,23 @@ const ContactForm = () => {
       className="form-container"
       onSubmit={handleSubmit}
     >
-      
       <input type="hidden" name="_captcha" value="false" />
 
-      <div>
-        <label>Nombre</label>
-        <input name="name" required />
-      </div>
+      <div className="form">
+        <div className="container form-group">
+          <input className="input" name="name" required />
+          <label className="label">Nombre</label>
+        </div>
 
-      <div>
-        <label>Email</label>
-        <input name="email" type="email" required />
-      </div>
+        <div className="container form-group">
+          <input className="input" name="email" type="email" required />
+          <label className="label">Email</label>
+        </div>
 
-      <div>
-        <label>Mensaje</label>
-        <textarea name="message" required />
+        <div className="container form-group">
+          <textarea className="input" name="message" required />
+          <label className="label">Mensaje</label>
+        </div>
       </div>
 
       <button type="submit" className="button">

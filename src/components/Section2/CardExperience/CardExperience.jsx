@@ -51,7 +51,7 @@ const CardExperience = () => {
             </div>
             
             <button onClick={handleMoreClick}>
-                 {showMore ? "Hide" : "Show"} details
+                 {showMore ? "Ocultar" : "Mostrar"} detalles
             </button>
 
              {showMore && (
