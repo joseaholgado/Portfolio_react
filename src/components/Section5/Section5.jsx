@@ -5,7 +5,7 @@ import ContactForm from './ContactForm/ContactForm'
 import { motion } from 'framer-motion'
 const Section5 = () => {
     return (
-        <div className="section5">
+        <div className="section5" id="section5">
             <div className="section5__content">
                 <motion.div 
                     initial={{ opacity: 0, y: -30 }}

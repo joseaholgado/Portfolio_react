@@ -31,7 +31,9 @@ const Navbar = () => {
         <ul className={`navbar__nav-links ${isOpen ? "navbar__nav-links--active" : ""}`}>
           <li className="navbar__nav-item"><a href="#section1" onClick={() => setIsOpen(false)}>Inicio</a></li>
           <li className="navbar__nav-item"><a href="#section2" onClick={() => setIsOpen(false)}>Habilidades</a></li>
-          <li className="navbar__nav-item"><a href="#section4" onClick={() => setIsOpen(false)}>Contacto</a></li>
+          <li className="navbar__nav-item"><a href="#section3" onClick={() => setIsOpen(false)}>Proyectos</a></li>
+          <li className="navbar__nav-item"><a href="#section4" onClick={() => setIsOpen(false)}>Experiencia</a></li>
+          <li className="navbar__nav-item"><a href="#section5" onClick={() => setIsOpen(false)}>Contacto</a></li>
         </ul>
        
         <BurguerButton toggleMenu={toggleMenu} isOpen={isOpen}/>

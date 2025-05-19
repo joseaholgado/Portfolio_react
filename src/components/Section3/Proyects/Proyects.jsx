@@ -78,14 +78,7 @@ const Proyects = () => {
 
   return (
     <section className="projects-section">
-      <motion.h2
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
-      >
-        Mis Proyectos
-      </motion.h2>
+      <h1 className="section3__title-text">Proyectos</h1>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
