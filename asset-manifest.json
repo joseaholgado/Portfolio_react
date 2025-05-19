@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio_react/static/css/main.43cf6a6d.css",
-    "main.js": "/Portfolio_react/static/js/main.f28f6351.js",
-    "static/js/453.1407b060.chunk.js": "/Portfolio_react/static/js/453.1407b060.chunk.js",
+    "main.css": "/Portfolio_react/static/css/main.db0e4642.css",
+    "main.js": "/Portfolio_react/static/js/main.617fac94.js",
+    "static/js/453.ace21015.chunk.js": "/Portfolio_react/static/js/453.ace21015.chunk.js",
+    "static/media/Papafilms.png": "/Portfolio_react/static/media/Papafilms.742055450058aa1b5bdc.png",
     "static/media/Jose_antonio.jpg": "/Portfolio_react/static/media/Jose_antonio.33972529ceb70125f691.jpg",
     "static/media/fa-solid-900.ttf": "/Portfolio_react/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/Ciberseguridad.jpeg": "/Portfolio_react/static/media/Ciberseguridad.0043992119029579bb82.jpeg",
@@ -18,6 +19,7 @@
     "static/media/Scss.png": "/Portfolio_react/static/media/Scss.9dcb46eb9f2d688bef83.png",
     "static/media/DevOps.png": "/Portfolio_react/static/media/DevOps.913e76f17fe4a4879dd2.png",
     "static/media/fa-regular-400.ttf": "/Portfolio_react/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/scrapy.jpeg": "/Portfolio_react/static/media/scrapy.ca3eecf6ed87609fca98.jpeg",
     "static/media/Front-end.jpg": "/Portfolio_react/static/media/Front-end.171fbe7a95abd461d86e.jpg",
     "static/media/CloudServer.jpg": "/Portfolio_react/static/media/CloudServer.e7106a44962e930ab96a.jpg",
     "static/media/Ollama.png": "/Portfolio_react/static/media/Ollama.d58b3c2fb974bf462e57.png",
@@ -28,10 +30,14 @@
     "static/media/Jenkins.png": "/Portfolio_react/static/media/Jenkins.84750961bdf8ae419d12.png",
     "static/media/Aws.png": "/Portfolio_react/static/media/Aws.369c07af646584d66662.png",
     "static/media/Git.png": "/Portfolio_react/static/media/Git.5418f0cfbb0231fe2d13.png",
+    "static/media/AppEntreno.jpeg": "/Portfolio_react/static/media/AppEntreno.449ebfe1c9f7a9f87456.jpeg",
+    "static/media/makinonBikes.gif": "/Portfolio_react/static/media/makinonBikes.b2be39f23fb2a61bfce7.gif",
+    "static/media/clasificadorDigitosMNIST.jpeg": "/Portfolio_react/static/media/clasificadorDigitosMNIST.bafbedb475d1d23bc22f.jpeg",
     "static/media/fa-regular-400.woff2": "/Portfolio_react/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/Laravel.png": "/Portfolio_react/static/media/Laravel.add34ec5d995c188ac4d.png",
     "static/media/Java.png": "/Portfolio_react/static/media/Java.9ed54aae3c3a5dda348a.png",
     "static/media/Node-js.png": "/Portfolio_react/static/media/Node-js.d4765ceeb858cd68b017.png",
+    "static/media/botTelegram.jpeg": "/Portfolio_react/static/media/botTelegram.c86312a06a652086ef45.jpeg",
     "static/media/Database.jpg": "/Portfolio_react/static/media/Database.c8533a9a777068e5e98c.jpg",
     "static/media/MongoDB.png": "/Portfolio_react/static/media/MongoDB.2178943141ba7e7fae4e.png",
     "static/media/Php.png": "/Portfolio_react/static/media/Php.b18e00fadcca2b75cb71.png",
@@ -39,12 +45,12 @@
     "static/media/Express-js.png": "/Portfolio_react/static/media/Express-js.9b344d7469dbbdc76754.png",
     "static/media/fa-v4compatibility.woff2": "/Portfolio_react/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Portfolio_react/index.html",
-    "main.43cf6a6d.css.map": "/Portfolio_react/static/css/main.43cf6a6d.css.map",
-    "main.f28f6351.js.map": "/Portfolio_react/static/js/main.f28f6351.js.map",
-    "453.1407b060.chunk.js.map": "/Portfolio_react/static/js/453.1407b060.chunk.js.map"
+    "main.db0e4642.css.map": "/Portfolio_react/static/css/main.db0e4642.css.map",
+    "main.617fac94.js.map": "/Portfolio_react/static/js/main.617fac94.js.map",
+    "453.ace21015.chunk.js.map": "/Portfolio_react/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43cf6a6d.css",
-    "static/js/main.f28f6351.js"
+    "static/css/main.db0e4642.css",
+    "static/js/main.617fac94.js"
   ]
 }
